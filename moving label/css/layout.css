@@ -1,0 +1,103 @@
+/*tips:
+main center setting : margin 0 auto; width 500px
+main height setting : decided by the element height inside of itself
+*/
+
+
+
+/*basic set */
+
+/*import Lobster*/
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*ie box model: width = content + padding + model;*/
+}
+
+/*baisc layout*/
+
+body{
+    padding: 100px;
+    font-family: 'Lobster', cursive;
+    background: hsl(215, 100%, 94%);
+}
+
+main{
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    color: hsl(60, 33%, 70%);
+    background-color: hsl(300,33%, 30%);
+    margin-bottom: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+/*form setting : center position*/
+.ml {
+    padding: 0 50px 10px;
+}
+
+
+.ml label, .ml input{
+    width: 400px;
+    height: 46px;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+}
+
+.ml input{
+    border-radius: 2px;
+    border: 1px solid #999;
+    cursor: text;
+    color: #666;
+}
+
+div{
+    position: relative;
+}
+
+/*label setting : let the label over the input*/
+.ml label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #666;
+}
+
+.ch:first-child{
+    padding-left: 5px;
+}
+
+.ch:last-child{
+    padding-right: 5px;
+}
+
+.ch{
+    position: relative;
+    background-color: white;/*for upword animation*/
+}
+
+/*.focused{
+   pointer-events: none;
+}*/
+/*when any input is already focussed clicking on it(label) again won't do anything*/
+
+
+
+
+
